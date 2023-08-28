@@ -1,0 +1,21 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Area</th>
+          <th scope="col">Country Code2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let country of countries">
+          <td><a [routerLink]="['/languages', country.country_id]">{{country.name}} </a></td>
+          <td>{{ country.area }}</td>
+          <td>{{ country.country_code2 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Country Code3</th>
+          <th scope="col">Year</th>
+          <th scope="col">Population</th>
+          <th scope="col">GDP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let country of countries">
+          <td>{{ country.name }}</td>
+          <td>{{ country.country_code3 }}</td>
+          <td>{{ country.year }}</td>
+          <td>{{ country.population }}</td>
+          <td>{{ country.gdp }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
